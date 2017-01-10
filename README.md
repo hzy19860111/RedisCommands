@@ -28,7 +28,7 @@
 [zrevrank](#SortedSetszrevrank)
 [zrevrange](#SortedSetszrevrange)
 
-## <label id="Strings">字符串(Strings)</label>
+<h2 id="Strings">字符串(Strings)</h2>
 
 * <label id="StringsGet">Get key-name</label>
 获取存储在给定键中的值
@@ -39,7 +39,7 @@
 * <label id="StringsDel">Del key-name</label>
 删除存储在给定键中的值（适用于所有类型）
 
-## <label id="Lists">列表(Lists)</label>
+<h2 id="Lists">列表(Lists)</h2>
 
 * <label id="ListsRPush">RPush list-key item</label>
 将给定值推入列表的右端
@@ -53,7 +53,7 @@
 * <label id="ListsLPop">LPop list-key</label>
 从列表的左端pop出一个值，并返回该值
 
-## <label id="Sets">集合(Sets)</label>
+<h2 id="Sets">集合(Sets)</h2>
 
 * <label id="Setssadd">sadd set-key item</label>
 将给定元素item添加到集合（返回0表示元素已存在于集合中，1表示添加成功）
@@ -67,7 +67,7 @@
 * <label id="Setssrem">srem set-key item</label>
 如果item存在于集合中，移除该元素（返回移除元素的数量）
 
-## <label id="Hashes">散列(Hashes)</label>
+<h2 id="Hashes">散列(Hashes)</h2>
 
 * <label id="Hasheshset">hset hash-key sub-key value</label>
 在散列中设置给定的键值对
@@ -79,7 +79,7 @@
 * <label id="Hasheshdel">hdel hash-key sub-key</label>
 移除散列中的给定键（存在返回1，不存在返回0）
 
-## <label id="SortedSets">有序集合(Sorted Sets)</label>
+<h2 id="SortedSets">有序集合(Sorted Sets)</h2>
 
 * <label id="SortedSetszadd">zadd zset-key score member</label>
 将一个带有给定分值的成员添加到有序集合中
