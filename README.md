@@ -1,5 +1,4 @@
 # Redis命令大全
-***
 ## 导航
 
 ### [Strings](#Strings)
@@ -28,7 +27,7 @@
 [szrem](#SortedSetszrem)
 [zrevrank](#SortedSetszrevrank)
 [zrevrange](#SortedSetszrevrange)
-***
+
 ## 字符串(<label id="Strings">Strings</label>)
 
 * <label id="StringsGet">Get</label> key-name
