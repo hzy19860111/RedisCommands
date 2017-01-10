@@ -30,36 +30,36 @@
 
 <h2 id="Strings">字符串(Strings)</h2>
 
-* <p id="StringsGet">Get key-name 获取存储在给定键中的值</p>
-* <p id="StringsSet">Set key-name 获取存储在给定键中的值</p>
-* <p id="StringsDel">Del key-name 删除存储在给定键中的值（适用于所有类型）</p>
+* <p id="StringsGet">Get key-name - 获取存储在给定键中的值</p>
+* <p id="StringsSet">Set key-name - 获取存储在给定键中的值</p>
+* <p id="StringsDel">Del key-name - 删除存储在给定键中的值（适用于所有类型）</p>
 
 <h2 id="Lists">列表(Lists)</h2>
 
-* <p id="ListsRPush">RPush list-key item 将给定值推入列表的右端</p>
-* <p id="ListsLRange">LRange list-key start stop 获取列表在给定范围上的所有值</p>
-* <p id="ListsLIndex">LIndex list-key index 获取列表在给定位置上的单个元素</p>
-* <p id="ListsLPop">LPop list-key 从列表的左端pop出一个值，并返回该值</p>
+* <p id="ListsRPush">RPush list-key item - 将给定值推入列表的右端</p>
+* <p id="ListsLRange">LRange list-key start stop - 获取列表在给定范围上的所有值</p>
+* <p id="ListsLIndex">LIndex list-key index - 获取列表在给定位置上的单个元素</p>
+* <p id="ListsLPop">LPop list-key - 从列表的左端pop出一个值，并返回该值</p>
 
 <h2 id="Sets">集合(Sets)</h2>
 
-* <p id="Setssadd">sadd set-key item 将给定元素item添加到集合（返回0表示元素已存在于集合中，1表示添加成功）</p>
-* <p id="Setssmembers">smembers set-key 返回集合中的所有元素</p>
-* <p id="Setssismember">sismember set-key item 检查给定元素item是否存在于集合中</p>
-* <p id="Setssrem">srem set-key item 如果item存在于集合中，移除该元素（返回移除元素的数量）</p>
+* <p id="Setssadd">sadd set-key item - 将给定元素item添加到集合（返回0表示元素已存在于集合中，1表示添加成功）</p>
+* <p id="Setssmembers">smembers set-key - 返回集合中的所有元素</p>
+* <p id="Setssismember">sismember set-key item - 检查给定元素item是否存在于集合中</p>
+* <p id="Setssrem">srem set-key item - 如果item存在于集合中，移除该元素（返回移除元素的数量）</p>
 
 <h2 id="Hashes">散列(Hashes)</h2>
 
-* <p id="Hasheshset">hset hash-key sub-key value 在散列中设置给定的键值对</p>
-* <p id="Hasheshget">hget hash-key sub-key 在散列中获取指定键的值</p>
-* <p id="Hasheshgetall">hgetall hash-key 获取散列中所有的键值对</p>
-* <p id="Hasheshdel">hdel hash-key sub-key 移除散列中的给定键（存在返回1，不存在返回0）</p>
+* <p id="Hasheshset">hset hash-key sub-key value - 在散列中设置给定的键值对</p>
+* <p id="Hasheshget">hget hash-key sub-key - 在散列中获取指定键的值</p>
+* <p id="Hasheshgetall">hgetall hash-key - 获取散列中所有的键值对</p>
+* <p id="Hasheshdel">hdel hash-key sub-key - 移除散列中的给定键（存在返回1，不存在返回0）</p>
 
 <h2 id="SortedSets">有序集合(Sorted Sets)</h2>
 
-* <p id="SortedSetszadd">zadd zset-key score member 将一个带有给定分值的成员添加到有序集合中</p>
-* <p id="SortedSetszrange">zrange zset-key start stop [withscores] 根据元素在有序集合中所处的位置，从有序集合里面获取多个元素</p>
-* <p id="SortedSetszrangebyscore">zrangebyscore zset-key start stop [withscores] 获取有序集合在给定分值范围内的所有元素</p>
-* <p id="SortedSetszrem">zrem zset-key member 在有序集合中移除给定成员（存在返回1，不存在返回0）</p>
-* <p id="SortedSetszrevrank">zrevrank zset-key member 返回有序集合成员 member的排名，成员按照分值从大到小排列</p>
-* <p id="SortedSetszrevrange">zrevrange zset-key start stop [withscores] 返回有序集合给定排名范围内的成员，成员按照分值从大到小排列</p>
+* <p id="SortedSetszadd">zadd zset-key score member - 将一个带有给定分值的成员添加到有序集合中</p>
+* <p id="SortedSetszrange">zrange zset-key start stop [withscores] - 根据元素在有序集合中所处的位置，从有序集合里面获取多个元素</p>
+* <p id="SortedSetszrangebyscore">zrangebyscore zset-key start stop [withscores] - 获取有序集合在给定分值范围内的所有元素</p>
+* <p id="SortedSetszrem">zrem zset-key member - 在有序集合中移除给定成员（存在返回1，不存在返回0）</p>
+* <p id="SortedSetszrevrank">zrevrank zset-key member - 返回有序集合成员 member的排名，成员按照分值从大到小排列</p>
+* <p id="SortedSetszrevrange">zrevrange zset-key start stop [withscores] - 返回有序集合给定排名范围内的成员，成员按照分值从大到小排列</p>
