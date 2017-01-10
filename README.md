@@ -30,14 +30,11 @@
 
 <h2 id="Strings">字符串(Strings)</h2>
 
-* <label id="StringsGet">Get key-name</label>
-获取存储在给定键中的值
+* <p id="StringsGet">Get key-name 获取存储在给定键中的值</p>
 
-* <label id="StringsSet">Set key-name</label>
-获取存储在给定键中的值
+* <p id="StringsSet">Set key-name 获取存储在给定键中的值</p>
 
-* <label id="StringsDel">Del key-name</label>
-删除存储在给定键中的值（适用于所有类型）
+* <label id="StringsDel">Del key-name 删除存储在给定键中的值（适用于所有类型）</label>
 
 <h2 id="Lists">列表(Lists)</h2>
 
