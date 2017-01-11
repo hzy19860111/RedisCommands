@@ -1,32 +1,32 @@
 # Redis命令大全
 ## 导航
 
-* [Strings](#Strings)
-  * [get](#StringsGet) 
-  * [set](#StringsSet) 
-  * [del](#StringsDel)
-* [Lists](#Lists)
-  * [rpush](#ListsRPush) 
-  * [lrange](#ListsLRange) 
-  * [lindex](#ListsLIndex) 
-  * [lpop](#ListsLPop)
-* [Sets](#Sets)
-  * [sadd](#Setssadd) 
-  * [smembers](#Setssmembers) 
-  * [sismember](#Setssismember) 
-  * [srem ](#Setssrem)
-* [Hashes](#Hashes)
-  * [hset](#Hasheshset)
-  * [hget](#Hasheshget)
-  * [hgetall](#Hasheshgetall)
-  * [hdel](#Hasheshdel)
-* [Sorted sets](#SortedSets)
-  * [zadd](#SortedSetszadd)
-  * [zrange](#SortedSetszrange)
-  * [zrangebyscore](#SortedSetszrangebyscore)
-  * [szrem](#SortedSetszrem)
-  * [zrevrank](#SortedSetszrevrank)
-  * [zrevrange](#SortedSetszrevrange)
+### [Strings](#Strings)
+   [get](#StringsGet) |
+   [set](#StringsSet) |
+   [del](#StringsDel) 
+### [Lists](#Lists)
+   [rpush](#ListsRPush) |
+   [lrange](#ListsLRange) |
+   [lindex](#ListsLIndex) |
+   [lpop](#ListsLPop)
+### [Sets](#Sets)
+   [sadd](#Setssadd) |
+   [smembers](#Setssmembers) |
+   [sismember](#Setssismember) |
+   [srem ](#Setssrem) 
+### [Hashes](#Hashes)
+   [hset](#Hasheshset) |
+   [hget](#Hasheshget) |
+   [hgetall](#Hasheshgetall) |
+   [hdel](#Hasheshdel)
+### [Sorted sets](#SortedSets)
+   [zadd](#SortedSetszadd) |
+   [zrange](#SortedSetszrange) |
+   [zrangebyscore](#SortedSetszrangebyscore) |
+   [szrem](#SortedSetszrem) |
+   [zrevrank](#SortedSetszrevrank) |
+   [zrevrange](#SortedSetszrevrange) 
 
 <h2 id="Strings">字符串(Strings)</h2>
 
