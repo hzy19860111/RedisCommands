@@ -1,4 +1,5 @@
 # Redis命令大全
+
 ## 导航
 
 ### [Strings](#Strings)
@@ -27,6 +28,14 @@
    [szrem](#SortedSetszrem) |
    [zrevrank](#SortedSetszrevrank) |
    [zrevrange](#SortedSetszrevrange) 
+### [Other Commands](#OtherCommands)
+[sort](#sort)
+#### [publish/subscribe](#pubsub)
+[subscribe](#subscribe) | 
+[unsubscribe](#unsubscribe) |
+[publish](#publish) |
+[psubscribe](#psubscribesort) |
+[punsubscribe](#punsubscribe) 
 
 <h2 id="Strings">字符串(Strings)</h2>
 
@@ -63,3 +72,12 @@
 * <p id="SortedSetszrem">zrem zset-key member - 在有序集合中移除给定成员（存在返回1，不存在返回0）</p>
 * <p id="SortedSetszrevrank">zrevrank zset-key member - 返回有序集合成员 member的排名，成员按照分值从大到小排列</p>
 * <p id="SortedSetszrevrange">zrevrange zset-key start stop [withscores] - 返回有序集合给定排名范围内的成员，成员按照分值从大到小排列</p>
+
+<h2 id="OtherCommands">其他命令(Other Commands)</h2>
+* <p id="sort">sort source-key [BY pattern] [Limit offset count] [Get pattern [Get pattern ...]] [Asc|Desc] [Alpha] [Store dest-key] - 根据给定的选项，对输入的列表、集合或者有序集合进行排序，返回或存储排序的结果</p>
+<h3 id="pubsub">发布/订阅(publish/subscribe)</h3>
+* <p id="subscribe">subscribe channel [channel ...] - 订阅给定的频道（一个或多个）</p>
+* <p id="unsubscribe">unsubscribe [channel [channel ...]] - 退订给定的频道，如果没有给定频道，将退订所有频道</p>
+* <p id="publish">publish channel message - 向给定频道发送消息</p>
+* <p id="psubscribe">psubscribe pattern [pattern ...] - 订阅给定模式匹配的频道</p>
+* <p id="punsubscribe">punsubscribe [pattern [pattern ...]] - 退订给定pattern匹配的所有模式，如果没有给定模式，将退订所有模式</p>
