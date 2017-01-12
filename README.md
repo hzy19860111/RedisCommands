@@ -3,39 +3,24 @@
 ## 导航
 
 ### [Strings](#Strings)
-   [get](#StringsGet) |
-   [set](#StringsSet) |
-   [del](#StringsDel) 
+   [get](#StringsGet) | [set](#StringsSet) | [del](#StringsDel) 
 ### [Lists](#Lists)
-   [rpush](#ListsRPush) |
-   [lrange](#ListsLRange) |
-   [lindex](#ListsLIndex) |
-   [lpop](#ListsLPop)
+   [rpush](#ListsRPush) | [lrange](#ListsLRange) | [lindex](#ListsLIndex) | [lpop](#ListsLPop)
 ### [Sets](#Sets)
-   [sadd](#Setssadd) |
-   [smembers](#Setssmembers) |
-   [sismember](#Setssismember) |
-   [srem ](#Setssrem) 
+   [sadd](#Setssadd) | [smembers](#Setssmembers) | [sismember](#Setssismember) | [srem ](#Setssrem) 
 ### [Hashes](#Hashes)
-   [hset](#Hasheshset) |
-   [hget](#Hasheshget) |
-   [hgetall](#Hasheshgetall) |
-   [hdel](#Hasheshdel)
+   [hset](#Hasheshset) | [hget](#Hasheshget) | [hgetall](#Hasheshgetall) | [hdel](#Hasheshdel)
 ### [Sorted sets](#SortedSets)
-   [zadd](#SortedSetszadd) |
-   [zrange](#SortedSetszrange) |
-   [zrangebyscore](#SortedSetszrangebyscore) |
-   [szrem](#SortedSetszrem) |
-   [zrevrank](#SortedSetszrevrank) |
-   [zrevrange](#SortedSetszrevrange) 
+   [zadd](#SortedSetszadd) | [zrange](#SortedSetszrange) | [zrangebyscore](#SortedSetszrangebyscore) |
+   [szrem](#SortedSetszrem) | [zrevrank](#SortedSetszrevrank) | [zrevrange](#SortedSetszrevrange) 
 ### [Other Commands](#OtherCommands)
 [sort](#sort)
 #### [publish/subscribe](#pubsub)
-[subscribe](#subscribe) | 
-[unsubscribe](#unsubscribe) |
-[publish](#publish) |
-[psubscribe](#psubscribesort) |
-[punsubscribe](#punsubscribe) 
+[subscribe](#subscribe) | [unsubscribe](#unsubscribe) | [publish](#publish) |
+[psubscribe](#psubscribesort) | [punsubscribe](#punsubscribe) 
+#### [expiring keys](#expiring)
+[persist](#persist) | [ttl](#ttl) | [expire](#expire) | [expireat](#expireat) | 
+[pttl](#pttl) | [pexpire](#pexpire) | [pexpireat](#pexpireat) 
 
 <h2 id="Strings">字符串(Strings)</h2>
 
@@ -81,3 +66,11 @@
 * <p id="publish">publish channel message - 向给定频道发送消息</p>
 * <p id="psubscribe">psubscribe pattern [pattern ...] - 订阅给定模式匹配的频道</p>
 * <p id="punsubscribe">punsubscribe [pattern [pattern ...]] - 退订给定pattern匹配的所有模式，如果没有给定模式，将退订所有模式</p>
+<h3 id="expiring">过期时间(expiring keys)</h3>
+* <p id="persist">persist key-name - 移除键的过期时间</p>
+* <p id="ttl">ttl key-name - 查看给定键距离过期还有多少秒</p>
+* <p id="expire">expire key-name seconds - 让指定键在给定秒数后过期</p>
+* <p id="expireat">expireat key-name timestamp - 将给定的过期时间设置为给定的Unix时间戳</p>
+* <p id="pttl">pttl key-name - 查看给定键距离过期还有多少毫秒(version >= 2.6)</p>
+* <p id="pexpire">pexpire key-name milliseconds - 让指定键在给定毫秒数后过期(version >= 2.6)</p>
+* <p id="pexpireat">pexpireat key-name timestamp-milliseconds - 将给定的过期时间设置为给定的毫秒级精度的Unix时间戳(version >= 2.6)</p>
