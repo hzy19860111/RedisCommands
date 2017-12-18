@@ -7,7 +7,7 @@
 ### [Lists](#Lists)
    [rpush](#ListsRPush) | [lrange](#ListsLRange) | [lindex](#ListsLIndex) | [lpop](#ListsLPop)
 ### [Sets](#Sets)
-   [sadd](#Setssadd) | [smembers](#Setssmembers) | [sismember](#Setssismember) | [srem ](#Setssrem) 
+   [sadd](#Setssadd) | [smembers](#Setssmembers) | [sismember](#Setssismember) | [srem ](#Setssrem) | [SCARD ](#SetScard) 
 ### [Hashes](#Hashes)
    [hset](#Hasheshset) | [hget](#Hasheshget) | [hgetall](#Hasheshgetall) | [hdel](#Hasheshdel)
 ### [Sorted sets](#SortedSets)
@@ -41,6 +41,7 @@
 * <p id="Setssmembers">smembers set-key - 返回集合中的所有元素</p>
 * <p id="Setssismember">sismember set-key item - 检查给定元素item是否存在于集合中</p>
 * <p id="Setssrem">srem set-key item - 如果item存在于集合中，移除该元素（返回移除元素的数量）</p>
+* <p id="SetScard">SCARD set-key - 获取集合的成员数</p>
 
 <h2 id="Hashes">散列(Hashes)</h2>
 
